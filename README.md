@@ -23,11 +23,11 @@ Forward chaining dimulai dari fakta yang diketahui. Sistem mencari aturan yang s
 
 ## Daftar sumber
 
-| Kode | Judul | Penerbit | URL | Tanggal akses |
+| Kode | Judul | Penerbit | URL |
 |---|---|---|---|---|
-| S1 | User Manual Electric Mosquito Swatter Model XQN-898 | Produsen | https://media.s-bol.com/JzJ8zXNjzklo/original.pdf | 13 November 2026 |
-| S2 | Electric Mosquito Swatter Instruction Manual | Produsen | https://ae-pic-a1.aliexpress-media.com/kf/Sb34036ed9ba044669482c6441ecb5b41V.pdf | 13 November 2026 |
-| S3 | 4-in-1 USB Rechargeable Electric Mosquito Swatter User Manual | Produsen | https://ae-pic-a1.aliexpress-media.com/kf/S1a996266f66e47c7bc31ee3ee04303abl.pdf | 13 November 2026 |
+| S1 | User Manual Electric Mosquito Swatter Model XQN-898 | Produsen | https://media.s-bol.com/JzJ8zXNjzklo/original.pdf |
+| S2 | Electric Mosquito Swatter Instruction Manual | Produsen | https://ae-pic-a1.aliexpress-media.com/kf/Sb34036ed9ba044669482c6441ecb5b41V.pdf |
+| S3 | 4-in-1 USB Rechargeable Electric Mosquito Swatter User Manual | Produsen | https://ae-pic-a1.aliexpress-media.com/kf/S1a996266f66e47c7bc31ee3ee04303abl.pdf |
 
 ## Tabel aturan
 
