@@ -1,0 +1,71 @@
+{
+  "judul": "Sistem Pakar Diagnosis Raket Nyamuk Elektrik",
+  "batas": "Aturan disusun dari dokumentasi penggunaan raket nyamuk elektrik S1-S3. Sistem hanya memberikan saran pemeriksaan awal untuk raket nyamuk isi ulang rumah tangga, bukan diagnosis servis resmi. Jika ada kerusakan listrik, bau terbakar, percikan abnormal, baterai menggelembung, atau raket terkena air, hentikan penggunaan dan hubungi produsen atau teknisi.",
+  "sumber": {
+    "S1": "User Manual Electric Mosquito Swatter Model XQN-898, https://media.s-bol.com/JzJ8zXNjzklo/original.pdf, diakses 13 November 2026",
+    "S2": "Electric Mosquito Swatter Instruction Manual, https://ae-pic-a1.aliexpress-media.com/kf/Sb34036ed9ba044669482c6441ecb5b41V.pdf, diakses 13 November 2026",
+    "S3": "4-in-1 USB Rechargeable Electric Mosquito Swatter User Manual, https://ae-pic-a1.aliexpress-media.com/kf/S1a996266f66e47c7bc31ee3ee04303abl.pdf, diakses 13 November 2026"
+  },
+  "fakta": [
+    "raket tidak menyala sama sekali",
+    "kabel atau port pengisian longgar atau rusak",
+    "sumber daya USB tidak memberi daya",
+    "indikator daya berkedip atau baterai lemah",
+    "tombol tegangan tinggi tidak ditekan",
+    "jaring logam kotor oleh debu atau sisa serangga",
+    "jaring logam berubah bentuk atau terlihat rusak",
+    "raket basah atau terkena air",
+    "ada bau terbakar, percikan abnormal, atau baterai menggelembung"
+  ],
+  "aturan": [
+    {
+      "id": "R1",
+      "jika": ["raket tidak menyala sama sekali", "kabel atau port pengisian longgar atau rusak"],
+      "mode": "atau",
+      "maka": "masalah pengisian daya",
+      "sumber": "S2"
+    },
+    {
+      "id": "R2",
+      "jika": ["masalah pengisian daya", "sumber daya USB tidak memberi daya"],
+      "mode": "dan",
+      "maka": "raket perlu diperiksa pengisiannya",
+      "sumber": "S2"
+    },
+    {
+      "id": "R3",
+      "jika": ["indikator daya berkedip atau baterai lemah", "tombol tegangan tinggi tidak ditekan"],
+      "mode": "atau",
+      "maka": "raket tidak menghasilkan tegangan tinggi",
+      "sumber": "S1"
+    },
+    {
+      "id": "R4",
+      "jika": ["raket tidak menghasilkan tegangan tinggi", "jaring logam kotor oleh debu atau sisa serangga"],
+      "mode": "dan",
+      "maka": "efektivitas raket menurun",
+      "sumber": "S3"
+    },
+    {
+      "id": "R5",
+      "jika": ["jaring logam berubah bentuk atau terlihat rusak", "raket basah atau terkena air"],
+      "mode": "atau",
+      "maka": "raket tidak aman digunakan",
+      "sumber": "S3"
+    },
+    {
+      "id": "R6",
+      "jika": ["ada bau terbakar, percikan abnormal, atau baterai menggelembung"],
+      "mode": "dan",
+      "maka": "hentikan penggunaan segera",
+      "sumber": "S1"
+    },
+    {
+      "id": "R7",
+      "jika": ["raket tidak aman digunakan", "hentikan penggunaan segera"],
+      "mode": "dan",
+      "maka": "perlu servis atau penggantian",
+      "sumber": "S3"
+    }
+  ]
+}
